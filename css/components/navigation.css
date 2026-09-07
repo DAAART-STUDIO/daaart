@@ -1,0 +1,102 @@
+/* ==========================================================================
+   NAVIGATION
+   ========================================================================== */
+
+.nav {
+  position: fixed;
+  inset-inline: 0;
+  top: 0;
+  z-index: 40;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-3) var(--gutter);
+  mix-blend-mode: difference;
+}
+
+.nav__logo {
+  font-family: var(--font-display);
+  font-size: 1.375rem;
+  letter-spacing: 0.02em;
+  color: #f6f4ee;
+}
+
+.nav__links {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.nav__link {
+  font-size: var(--fs-small);
+  letter-spacing: var(--ls-wide);
+  text-transform: uppercase;
+  color: #f6f4ee;
+  position: relative;
+  padding-bottom: 2px;
+}
+
+.nav__link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  height: 1px;
+  background: currentColor;
+  transition: right var(--dur-base) var(--ease-cinematic);
+}
+
+.nav__link:hover::after,
+.nav__link:focus-visible::after {
+  right: 0;
+}
+
+.nav__controls {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.nav__lang,
+.nav__theme {
+  font-size: var(--fs-small);
+  letter-spacing: var(--ls-wide);
+  color: #f6f4ee;
+}
+
+.nav__lang[aria-pressed='true'] { opacity: 1; }
+.nav__lang { opacity: 0.5; transition: opacity var(--dur-fast) var(--ease-cinematic); }
+
+.nav__burger {
+  display: none;
+  color: #f6f4ee;
+}
+
+@media (max-width: 768px) {
+  .nav__links { display: none; }
+  .nav__burger { display: block; }
+
+  .nav-menu {
+    position: fixed;
+    inset: 0;
+    z-index: 39;
+    background: var(--color-ink);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: var(--space-3);
+    padding: var(--gutter);
+    transform: translateY(-100%);
+    transition: transform var(--dur-base) var(--ease-cinematic);
+  }
+
+  .nav-menu[data-open='true'] { transform: translateY(0); }
+
+  .nav-menu__link {
+    font-family: var(--font-display);
+    font-size: var(--fs-h2);
+    color: var(--color-paper);
+  }
+}

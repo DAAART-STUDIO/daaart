@@ -1,0 +1,78 @@
+/* ==========================================================================
+   TOKENS — DAAART design system
+   Light = "Angels" (paper), Dark = "Demons" (ink). One accent, used sparingly.
+   ========================================================================== */
+
+:root {
+  /* Color — light (default) */
+  --color-paper: #f6f4ee;
+  --color-paper-dim: #ece7db;
+  --color-ink: #131211;
+  --color-ink-soft: #4a4744;
+  --color-line: rgba(19, 18, 17, 0.14);
+  --color-accent: #b8863a;
+  --color-accent-soft: rgba(184, 134, 58, 0.16);
+
+  /* Surfaces derived from color roles */
+  --surface: var(--color-paper);
+  --surface-dim: var(--color-paper-dim);
+  --on-surface: var(--color-ink);
+  --on-surface-soft: var(--color-ink-soft);
+  --line: var(--color-line);
+  --accent: var(--color-accent);
+  --accent-soft: var(--color-accent-soft);
+
+  /* Typography */
+  --font-display: 'Fraunces', 'Iowan Old Style', 'Times New Roman', serif;
+  --font-body: 'Inter', -apple-system, 'Segoe UI', sans-serif;
+
+  --fs-display: clamp(2.75rem, 2rem + 3.6vw, 6rem);
+  --fs-h1: clamp(2.25rem, 1.7rem + 2.6vw, 4.25rem);
+  --fs-h2: clamp(1.75rem, 1.4rem + 1.6vw, 2.75rem);
+  --fs-h3: clamp(1.25rem, 1.1rem + 0.7vw, 1.625rem);
+  --fs-lead: clamp(1.125rem, 1rem + 0.5vw, 1.375rem);
+  --fs-body: 1rem;
+  --fs-small: 0.875rem;
+  --fs-eyebrow: 0.8125rem;
+
+  --lh-tight: 1.05;
+  --lh-heading: 1.15;
+  --lh-body: 1.6;
+
+  --ls-eyebrow: 0.14em;
+  --ls-wide: 0.06em;
+
+  /* Spacing scale (fluid) */
+  --space-1: 0.5rem;
+  --space-2: 1rem;
+  --space-3: 1.5rem;
+  --space-4: 2rem;
+  --space-5: clamp(2.5rem, 2rem + 2vw, 4rem);
+  --space-6: clamp(3.5rem, 2.5rem + 4vw, 6.5rem);
+  --space-7: clamp(5rem, 3rem + 8vw, 10rem);
+
+  /* Layout */
+  --container-max: 1360px;
+  --gutter: clamp(1.25rem, 3vw, 4rem);
+
+  /* Motion */
+  --ease-cinematic: cubic-bezier(0.16, 1, 0.3, 1);
+  --dur-fast: 240ms;
+  --dur-base: 480ms;
+  --dur-slow: 900ms;
+
+  /* Elevation kept minimal by design — no drop shadows on UI chrome */
+  color-scheme: light;
+}
+
+/* Color — dark ("Demons") */
+[data-theme='dark'] {
+  --color-paper: #131211;
+  --color-paper-dim: #1c1a18;
+  --color-ink: #f6f4ee;
+  --color-ink-soft: #b8b3a9;
+  --color-line: rgba(246, 244, 238, 0.14);
+  --color-accent: #d9a75a;
+  --color-accent-soft: rgba(217, 167, 90, 0.16);
+  color-scheme: dark;
+}

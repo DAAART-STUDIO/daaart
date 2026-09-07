@@ -1,0 +1,50 @@
+/* ==========================================================================
+   LAYOUT — container, section rhythm, responsive breakpoints
+   Checked at: 1920 / 1440 / 1024 / 768 / 430 / 390
+   ========================================================================== */
+
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+.section {
+  padding-block: var(--space-7);
+}
+
+.section--tight {
+  padding-block: var(--space-6);
+}
+
+.section__head {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--space-3);
+  margin-bottom: var(--space-6);
+}
+
+.section__head h2 {
+  grid-column: 1 / 8;
+}
+
+.section__head p {
+  grid-column: 8 / 13;
+  align-self: end;
+  color: var(--on-surface-soft);
+}
+
+@media (max-width: 1024px) {
+  .section__head { grid-template-columns: 1fr; }
+  .section__head h2, .section__head p { grid-column: auto; }
+  .section__head p { margin-top: var(--space-2); }
+}
+
+@media (max-width: 768px) {
+  .section { padding-block: var(--space-6); }
+}
+
+@media (max-width: 430px) {
+  .section { padding-block: var(--space-5); }
+}

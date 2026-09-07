@@ -1,0 +1,33 @@
+/* ==========================================================================
+   BUTTONS
+   ========================================================================== */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  font-size: var(--fs-small);
+  letter-spacing: var(--ls-wide);
+  text-transform: uppercase;
+  padding-bottom: var(--space-1);
+  border-bottom: 1px solid currentColor;
+  transition: gap var(--dur-fast) var(--ease-cinematic), opacity var(--dur-fast) var(--ease-cinematic);
+}
+
+.btn:hover,
+.btn:focus-visible {
+  gap: var(--space-2);
+}
+
+.btn--primary {
+  color: var(--color-paper);
+}
+
+.btn--ghost {
+  color: var(--on-surface-soft);
+}
+
+.btn__arrow {
+  width: 14px;
+  height: 10px;
+}

@@ -1,0 +1,67 @@
+{
+  "meta": {
+    "title": "DAAART Studio — Demon & Angels PR",
+    "description": "Individual solutions for unique people and cool companies. Promotion, scaling and automation for businesses that don't do ordinary."
+  },
+  "nav": {
+    "solutions": "Solutions",
+    "approach": "Approach",
+    "contact": "Contact",
+    "menuOpen": "Menu",
+    "themeToggle": "Theme"
+  },
+  "hero": {
+    "eyebrow": "DAAART Studio — Demon & Angels PR",
+    "title": "Individual solutions for unique people and cool companies.",
+    "lead": "We build cinematic digital presence, drive promotion, and automate the business behind it — for clients who don't do ordinary.",
+    "cta": "Start a project",
+    "scroll": "Scroll"
+  },
+  "solutions": {
+    "eyebrow": "What we do",
+    "title": "Four ways in.",
+    "note": "Every engagement is scoped around you — not a package.",
+    "item1": {
+      "title": "Promotion & PR",
+      "desc": "Positioning, storytelling and campaigns that put you in front of the right audience — not just any audience."
+    },
+    "item2": {
+      "title": "Scaling",
+      "desc": "Systems and structure that let your business grow without breaking what makes it work."
+    },
+    "item3": {
+      "title": "Automation",
+      "desc": "Bots, integrations and workflows that quietly remove hours of manual work from your team."
+    },
+    "item4": {
+      "title": "Bespoke Solutions",
+      "desc": "When nothing off-the-shelf fits, we design something that does — built around you, not a template."
+    }
+  },
+  "approach": {
+    "eyebrow": "How we work",
+    "title": "No templates, no shortcuts.",
+    "step1": {
+      "title": "Listen & diagnose",
+      "desc": "We start with your business, not a moodboard — what's working, what's costing you time."
+    },
+    "step2": {
+      "title": "Design & build",
+      "desc": "Editorial-grade design paired with the automation that keeps it running."
+    },
+    "step3": {
+      "title": "Launch & scale",
+      "desc": "We stay close after launch, tuning what the numbers tell us."
+    }
+  },
+  "contact": {
+    "title": "Let's build something uncommon.",
+    "emailLabel": "Email",
+    "phoneLabel": "Phone",
+    "socialLabel": "Follow"
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "back": "Back to top"
+  }
+}

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title data-i18n="meta.title">DAAART Studio — Demon &amp; Angels PR</title>
+<meta name="description" content="Individual solutions for unique people and cool companies." data-i18n-attr="content:meta.description">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/components/navigation.css">
+<link rel="stylesheet" href="css/components/hero.css">
+<link rel="stylesheet" href="css/components/buttons.css">
+<link rel="stylesheet" href="css/components/sections.css">
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<header class="nav">
+  <a class="nav__logo" href="#top">DAAART</a>
+  <nav class="nav__links" aria-label="Primary">
+    <a class="nav__link" href="#solutions" data-i18n="nav.solutions">Solutions</a>
+    <a class="nav__link" href="#approach" data-i18n="nav.approach">Approach</a>
+    <a class="nav__link" href="#contact" data-i18n="nav.contact">Contact</a>
+  </nav>
+  <div class="nav__controls">
+    <button class="nav__lang" data-lang-switch="en" aria-pressed="true">EN</button>
+    <button class="nav__lang" data-lang-switch="ua" aria-pressed="false">UA</button>
+    <button class="nav__theme" data-theme-toggle aria-pressed="false"><span data-i18n="nav.themeToggle">Theme</span></button>
+    <button class="nav__burger" data-nav-toggle aria-expanded="false" aria-controls="nav-menu">
+      <span data-i18n="nav.menuOpen">Menu</span>
+    </button>
+  </div>
+</header>
+
+<!-- MOBILE MENU -->
+<nav id="nav-menu" class="nav-menu" data-nav-menu data-open="false" aria-label="Mobile">
+  <a class="nav-menu__link" href="#solutions" data-i18n="nav.solutions">Solutions</a>
+  <a class="nav-menu__link" href="#approach" data-i18n="nav.approach">Approach</a>
+  <a class="nav-menu__link" href="#contact" data-i18n="nav.contact">Contact</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="hero__field" aria-hidden="true"></div>
+  <div class="hero__content">
+    <span class="eyebrow hero__eyebrow" data-i18n="hero.eyebrow">DAAART Studio — Demon &amp; Angels PR</span>
+    <h1 class="hero__title" data-i18n="hero.title">Individual solutions for unique people and cool companies.</h1>
+    <p class="hero__lead" data-i18n="hero.lead">We build cinematic digital presence, drive promotion, and automate the business behind it.</p>
+    <div class="hero__actions">
+      <a class="btn btn--primary" href="#contact" data-i18n="hero.cta">Start a project</a>
+    </div>
+  </div>
+  <div class="hero__scroll" aria-hidden="true">
+    <span data-i18n="hero.scroll">Scroll</span>
+    <span class="hero__scroll-line"></span>
+  </div>
+</section>
+
+<!-- SOLUTIONS -->
+<section class="section" id="solutions" data-section="solutions">
+  <div class="container">
+    <div class="section__head">
+      <h2 class="eyebrow" data-i18n="solutions.eyebrow">What we do</h2>
+      <p data-i18n="solutions.note">Every engagement is scoped around you — not a package.</p>
+    </div>
+    <ul class="solutions__list">
+      <li class="solutions__item" data-reveal>
+        <span class="solutions__index">01</span>
+        <h3 class="solutions__title" data-i18n="solutions.item1.title">Promotion &amp; PR</h3>
+        <p class="solutions__desc" data-i18n="solutions.item1.desc">Positioning, storytelling and campaigns.</p>
+      </li>
+      <li class="solutions__item" data-reveal>
+        <span class="solutions__index">02</span>
+        <h3 class="solutions__title" data-i18n="solutions.item2.title">Scaling</h3>
+        <p class="solutions__desc" data-i18n="solutions.item2.desc">Systems and structure for sustainable growth.</p>
+      </li>
+      <li class="solutions__item" data-reveal>
+        <span class="solutions__index">03</span>
+        <h3 class="solutions__title" data-i18n="solutions.item3.title">Automation</h3>
+        <p class="solutions__desc" data-i18n="solutions.item3.desc">Bots, integrations and workflows.</p>
+      </li>
+      <li class="solutions__item" data-reveal>
+        <span class="solutions__index">04</span>
+        <h3 class="solutions__title" data-i18n="solutions.item4.title">Bespoke Solutions</h3>
+        <p class="solutions__desc" data-i18n="solutions.item4.desc">Designed around you, not a template.</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- APPROACH -->
+<section class="section approach" id="approach" data-section="approach">
+  <div class="container">
+    <div class="section__head">
+      <h2 class="eyebrow" data-i18n="approach.eyebrow">How we work</h2>
+      <p data-i18n="approach.title">No templates, no shortcuts.</p>
+    </div>
+    <div class="approach__list">
+      <div class="approach__item" data-reveal>
+        <span class="approach__index">01</span>
+        <h3 class="approach__title" data-i18n="approach.step1.title">Listen &amp; diagnose</h3>
+        <p class="approach__desc" data-i18n="approach.step1.desc">We start with your business, not a moodboard.</p>
+      </div>
+      <div class="approach__item" data-reveal>
+        <span class="approach__index">02</span>
+        <h3 class="approach__title" data-i18n="approach.step2.title">Design &amp; build</h3>
+        <p class="approach__desc" data-i18n="approach.step2.desc">Editorial-grade design paired with automation.</p>
+      </div>
+      <div class="approach__item" data-reveal>
+        <span class="approach__index">03</span>
+        <h3 class="approach__title" data-i18n="approach.step3.title">Launch &amp; scale</h3>
+        <p class="approach__desc" data-i18n="approach.step3.desc">We stay close after launch.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<footer class="section contact" id="contact" data-section="contact">
+  <div class="container">
+    <h2 class="contact__title" data-i18n="contact.title">Let's build something uncommon.</h2>
+    <div class="contact__grid">
+      <div>
+        <span class="contact__label" data-i18n="contact.emailLabel">Email</span>
+        <a class="contact__value" href="mailto:daaart.solutions@gmail.com">daaart.solutions@gmail.com</a>
+      </div>
+      <div>
+        <span class="contact__label" data-i18n="contact.phoneLabel">Phone</span>
+        <a class="contact__value" href="tel:+380986748199">+38 098 674 8199</a>
+      </div>
+      <div>
+        <span class="contact__label" data-i18n="contact.socialLabel">Follow</span>
+        <div class="contact__social">
+          <a href="https://www.instagram.com/daaart.solutions/" aria-label="Instagram">Instagram</a>
+          <a href="https://telegram.me/daaart_bot?start" aria-label="Telegram">Telegram</a>
+          <a href="https://www.facebook.com/groups/1074280400088805" aria-label="Facebook">Facebook</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__meta">
+      <span>© 2026 DAAART Studio. <span data-i18n="footer.rights">All rights reserved.</span></span>
+      <a href="#top" data-i18n="footer.back">Back to top</a>
+    </div>
+  </div>
+</footer>
+
+<script type="module" src="js/app.js"></script>
+</body>
+</html>
